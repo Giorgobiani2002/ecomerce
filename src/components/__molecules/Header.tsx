@@ -43,7 +43,7 @@ const Header = () => {
     setHasUser(!!token);
     const fetchCartQuantity = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/auth/${userId}`);
+        const response = await fetch(`https://eccomerce-back-klm1.onrender.com/auth/${userId}`);
         const data = await response.json();
         const quantity = data.order.map((item: any) => item.products.length);
         const cart = data.order.map((item: any) => item.products);

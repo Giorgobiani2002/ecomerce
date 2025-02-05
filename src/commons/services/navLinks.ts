@@ -4,7 +4,7 @@ export const navLinks = [
     title: 'Home',
   },
   {
-    link: '/shop',
+    link: '/Shop',
     title: 'Shop',
   },
   {

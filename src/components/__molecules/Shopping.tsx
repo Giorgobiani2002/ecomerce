@@ -26,7 +26,7 @@ export default function Shopping() {
     const fetchOrderData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/auth/${userId}`
+          `https://eccomerce-back-klm1.onrender.com/auth/${userId}`
         );
 
         setCart(response.data.order);

@@ -30,7 +30,7 @@ const AddToCart: React.FC<AddToCartSwipperProps> = ({ productId }) => {
       console.log("User ID:", userId);
 
       const response = await axios.get(
-        `http://localhost:3001/products/${productId}`
+        `https://eccomerce-back-klm1.onrender.com/products/${productId}`
       );
       const product = response.data;
 
@@ -52,7 +52,7 @@ const AddToCart: React.FC<AddToCartSwipperProps> = ({ productId }) => {
       console.log(orderData);
 
       const orderResponse = await axios.post(
-        "http://localhost:3001/orders",
+        "https://eccomerce-back-klm1.onrender.com/orders",
         orderData,
         {
           headers: {

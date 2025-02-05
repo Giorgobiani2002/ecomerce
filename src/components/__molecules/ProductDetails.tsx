@@ -27,7 +27,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchData = async (id: string | undefined) => {
       try {
-        const res = await fetch(`http://localhost:3001/products/${id}`);
+        const res = await fetch(`https://eccomerce-back-klm1.onrender.com/products/${id}`);
         if (!res.ok) throw new Error('Failed to fetch product data');
         const result = await res.json();
         console.log(result);

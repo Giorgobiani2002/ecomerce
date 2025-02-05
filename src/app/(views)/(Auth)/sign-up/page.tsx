@@ -28,7 +28,7 @@ export default function Page() {
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const res = await axios.post("http://localhost:3001/auth/signup", data);
+      const res = await axios.post("https://eccomerce-back-klm1.onrender.com/auth/signup", data);
       if (res.status === 201) {
         alert("You have registered successfully!");
 

@@ -31,7 +31,7 @@ export default function Checkout() {
 
   const handleClick = () => {
     setTimeout(() => {
-      axios.delete("http://localhost:3001/orders");
+      axios.delete("https://eccomerce-back-klm1.onrender.com/orders");
       router.push("/");
     }, 5000);
   };

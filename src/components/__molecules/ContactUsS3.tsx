@@ -3,10 +3,19 @@ import React from "react";
 import { Adress, Contact, Email, Map } from "@/utility/images/ImgExport";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 
 export default function ContactUsS3() {
   return (
-    <div className="mt-[48px] max-w-[560px] sm:max-w-[1120px] m-auto ">
+    <motion.div
+      className="mt-[48px] max-w-[560px] sm:max-w-[1120px] m-auto "
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{
+        once: true,
+      }}
+    >
       <h1 className="text-center font-medium text-[44px] leading-[40px]">
         Contact Us
       </h1>
@@ -107,6 +116,6 @@ export default function ContactUsS3() {
           className="m-auto sm:m-0"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

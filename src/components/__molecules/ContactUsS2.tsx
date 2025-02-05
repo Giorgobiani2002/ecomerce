@@ -1,10 +1,18 @@
+"use client"
 import React from "react";
 import { ContactUsBanner, ArrowRight } from "@/utility/images/ImgExport";
 import Image from "next/image";
+import {motion} from "framer-motion"
 
 export default function ContactUsS2() {
   return (
-    <div className="mt-[48px] max-w-[1120px] flex m-auto flex-col sm:flex-row" >
+    <motion.div className="mt-[48px] max-w-[1120px] flex m-auto flex-col sm:flex-row" 
+    initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{
+          once: true,
+        }}>
       <Image
         src={ContactUsBanner}
         width={560}
@@ -30,6 +38,6 @@ export default function ContactUsS2() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,9 +1,19 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function ContactUsS1() {
   return (
     <>
-      <div className="max-w-[560px] sm:max-w-[1120px] m-auto ">
+      <motion.div
+        className="max-w-[560px] sm:max-w-[1120px] m-auto "
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{
+          once: true,
+        }}
+      >
         <h2 className="font-medium text-[54px] leading-[58px] text-[#141718] ">
           We believe in sustainable decor. We’re passionate about life at home.
         </h2>
@@ -14,7 +24,7 @@ export default function ContactUsS1() {
           generations, faithful to the shapes of each period, with a touch of
           the present
         </p>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -1,0 +1,587 @@
+import {
+  star,
+  trayTableClr1,
+  trayTableClr2,
+  trayTableClr3,
+  trayTableClr4,
+  trayTableIMG1,
+  trayTableIMG2,
+  trayTableIMG3,
+  trayTableIMG4,
+} from "@/utility/images/ImgExport";
+
+export const products = [
+  {
+    id: 1,
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "loveseat-sofa.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    name: "Tray Table",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    imagesCH: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+    price: 199.99,
+    oldPrice: 400.0,
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Luxury Sofa",
+    price: "299.00",
+    oldPrice: "500.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "luxury-sofa.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Table Lamp",
+    price: "19.00",
+    oldPrice: "38.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "table-lamp.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "White Drawer Unit",
+    price: "89.99",
+    oldPrice: "180.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "white-drawer-unit.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Black Tray Table",
+    price: "19.99",
+    oldPrice: "39.99",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "black-tray-table.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Bamboo Basket",
+    price: "9.50",
+    oldPrice: "19.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "bamboo-basket.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Off-White Pillow",
+    price: "7.99",
+    oldPrice: "15.99",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "off-white-pillow.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Light Beige Pillow",
+    price: "3.99",
+    oldPrice: "7.99",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "light-beige-pillow.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "Black Brow Side Table",
+    price: "16.99",
+    oldPrice: "33.99",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "black-brow-side-table.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: "Cozy Sofa",
+    price: "229.00",
+    oldPrice: "460.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "cozy-sofa.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "Modern Chair",
+    price: "149.00",
+    oldPrice: "298.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "modern-chair.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "Floor Lamp",
+    price: "89.00",
+    oldPrice: "178.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "floor-lamp.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "Round Coffee Table",
+    price: "59.99",
+    oldPrice: "119.99",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "round-coffee-table.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Living Room",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: "Office Chair",
+    price: "129.00",
+    oldPrice: "258.00",
+    discount: "50%",
+    rating: 5,
+    isNew: true,
+    image: "office-chair.jpg",
+    color: ["black"],
+    measurments: "17 1/2x20 5/8 ",
+    reviews: 11,
+    description:
+      "Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.",
+    images: [trayTableIMG1, trayTableIMG3, trayTableIMG4],
+    stars: [star, star, star, star, star],
+    category: "Bedroom",
+    measurements: '17 1/2x20 5/8 "',
+
+    wishlist: false,
+    quantity: 1,
+    SKU: "1117",
+    chooseColor: [
+      {
+        img: trayTableClr1,
+        color: "black",
+      },
+      {
+        img: trayTableClr2,
+        color: "brown",
+      },
+      {
+        img: trayTableClr3,
+        color: "red",
+      },
+      {
+        img: trayTableClr4,
+        color: "white",
+      },
+    ],
+  },
+];

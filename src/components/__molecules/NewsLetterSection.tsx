@@ -1,10 +1,19 @@
+"use client"
 import React from "react";
 import { mail } from "@/utility/images/ImgExport";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 export default function NewsLetterSection() {
   return (
-    <div className="max-w-[1440px] w-full flex justify-center ml-auto mr-auto">
+    <motion.div
+      className="max-w-[1440px] w-full flex justify-center ml-auto mr-auto"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.1 }}
+      viewport={{
+        once: true,
+      }}
+    >
       <div className="max-w-[1184px] w-full flex  justify-center pl-[32px] pr-[32px] bg-[url('/Newsletter.jpg')] bg-cover bg-center h-[392px]">
         <div className="relative z-10 flex flex-col justify-center gap-y-[8px] items-center h-full">
           <p className="text-4xl font-medium">Join Our Newsletter</p>
@@ -27,6 +36,6 @@ export default function NewsLetterSection() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

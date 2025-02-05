@@ -4,7 +4,7 @@ import LayoutToggle from "../__atoms/LayoutToggle";
 import ShopFilterSidebar from "./ShopFilterSidebar";
 import ShopTopFilters from "./ShopTopFilters";
 import ShopProductGrid from "./ShopProductGrid";
-
+import { motion } from "framer-motion";
 export default function ShopProductsSection() {
   const [layout, setLayout] = useState("Sort1");
   const [filters, setFilters] = useState<any>({
@@ -14,7 +14,13 @@ export default function ShopProductsSection() {
 
   return (
     <div className="min-h-screen mt-[50px] max-w-[1440px] w-full mx-auto flex justify-center">
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.1 }}
+        viewport={{
+          once: true,
+        }}
         className={`max-w-[1188px] w-full px-[34px] grid ${
           layout === "Sort1"
             ? "sm:grid-cols-[262px,1fr] sm:grid-rows-[auto,1fr] grid-cols-[1fr] grid-rows-[96px,1fr]"
@@ -39,7 +45,7 @@ export default function ShopProductsSection() {
         </div>
 
         <ShopProductGrid layout={layout} filters={filters} />
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import ProductDetails from "@/components/__molecules/ProductDetails";
 import SwiperProduct from "@/components/__organisms/SwiperProduct";
 import SwipperProduct2 from "@/components/__organisms/SwipperProduct2";

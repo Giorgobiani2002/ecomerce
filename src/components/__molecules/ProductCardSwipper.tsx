@@ -41,13 +41,13 @@ const ProductCardSwipper: React.FC<ProductCardSwipperProps> = ({
           </button>
         )}
         <div className='absolute bottom-[16px] left-[16px]'>
-          {hoverIndex === index && (
+          {/* {hoverIndex === index && (
             <button className='w-[230px] h-[46px] rounded-[8px] flex justify-center items-center bg-[#141718]'>
               <span className='Font-Inter font-normal text-[16px] leading-[28px] text-white'>
                 Add to Cart
               </span>
             </button>
-          )}
+          )} */}
         </div>
       </div>
       <div className='flex flex-col mt-[12px]'>
